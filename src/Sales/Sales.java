@@ -9,8 +9,6 @@ package Sales;
  * Reads in and stores sales for each of 5 salespeople.  Displays
  * sales entered by salesperson id and total sales for all salespeople.
  */
-import sun.jvm.hotspot.oops.Array;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
