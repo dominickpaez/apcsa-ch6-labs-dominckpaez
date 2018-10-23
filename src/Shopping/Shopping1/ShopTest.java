@@ -1,4 +1,4 @@
-package Shopping;
+package Shopping.Shopping1;
 
 import java.util.Scanner;
 
@@ -38,10 +38,7 @@ public class ShopTest {
                     }
                 }
         }
-
-        myCart.toString();
-        System.out.println(myCart.getTotalPrice());
-
+        System.out.println(myCart.toString());
     }
 }
 
