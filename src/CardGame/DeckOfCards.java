@@ -1,5 +1,7 @@
 package CardGame;
 
+import java.util.Scanner;
+
 /**
  * Name:
  * Date:
@@ -11,13 +13,21 @@ package CardGame;
  */
 
 public class DeckOfCards {
+    Scanner scan = new Scanner(System.in);
 
     private Card deck[];
     private int currentCard;
+    private int value;
+
+    private String Hearts = "♥";
+    private String Diamonds = "♦";
+    private String Clubs = "♣";
+    private String Spades = "♠";
+
     private final int NUMBER_OF_CARDS = 52;
     private String faces[] = {"Ace", "Deuce", "Three", "Four", "Five", "Six",
             "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
-    private String suits[] = { "Hearts", "Diamonds", "Clubs", "Spades" };
+    private String suits[] = { Hearts, Diamonds, Clubs, Spades };
 
     /**
      * Constructor fills a deck array with Card objects.
@@ -63,6 +73,17 @@ public class DeckOfCards {
         else
             return null; // return null to indicate no more cards
     }
-  
+    public String Hand(Card[] player,int num){
+        String string = "";
+        for(int i = 0;i<=num;i++){
+            string += player[i];
+        }
+        return string;
+    }
+    public void aceException(int val){
+        value += val;
+
+    }
+
 }
 

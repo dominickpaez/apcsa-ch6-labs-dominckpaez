@@ -70,7 +70,7 @@ public class Sales
         if(arr.length == 0){
             throw new IllegalStateException();
         }
-        int total = 0;
+        double total = 0;
         double avg;
         for(int i = 0;i < arr.length;i++){
             total += arr[i];
@@ -83,7 +83,7 @@ public class Sales
     {
         //TODO 2a) find and return the index of the max value in arr
         int max = arr[0];
-        int maxLocation = -1;
+        int maxLocation = 0;
         for(int i = 0;i < arr.length;i++) {
             if (arr[i] > max){
                 max = arr[i];
